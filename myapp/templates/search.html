@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <body>
+   {% include 'header.html' %}
+ <div align="center">
+    {% for car in cars %}
+        {{car.car_model }}
+        {{car.car_depttime }}
+        {{car.car_retntime }}
+        {{car.car_source }}
+        {{car.car_destination }}
+        {{car.car_model }}
+        {{car.user_email }}
+        <br>
+     {% endfor %}
+
+ </div>
+    {% include 'footer.html' %}
+
+   </body>
+</html>
